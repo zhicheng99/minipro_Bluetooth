@@ -1,0 +1,8 @@
+<view>
+  <view bindtap="search">搜索设备</view>
+
+  <view wx:for="{{devices}}" >
+     {{item.deviceId}} 
+     <button bindtap="connect" data-id="{{item.deviceId}}">连接</button>
+  </view>
+</view>
